@@ -123,8 +123,8 @@ if(isset($_POST['btn-signup']))
                      
                     </div>
                         <h2>Login</h2>
-                        <input type="email" name="txtemail" placeholder="User Email">
-                        <input type="password" name="txtupass" placeholder="User Password">
+                        <input type="email" name="txtemail" placeholder="User Email" required />
+                        <input type="password" name="txtupass" placeholder="User Password" required >
                         <p class="signup forgot">Forgot Password!!! <a href="Fpass.php">Recover.</a></p>
                         <input type="submit" name="btn-login" value="login">
                         <p class="signup">Dont Have An Account!!! <a href="#" onclick="toggleForm();">Sign Up.</a></p>
@@ -140,9 +140,9 @@ if(isset($_POST['btn-signup']))
                     <form method="post">
                     <div class="errorBx"><?php if(isset($msg)) echo $msg;  ?></div>
                         <h2>Create Account</h2>
-                        <input type="text" name="txtuname" placeholder="username">
-                        <input type="email" name="txtemail" placeholder="user email">
-                        <select class="browser-default" name="bgroup">
+                        <input type="text" name="txtuname" placeholder="username" required />
+                        <input type="email" name="txtemail" placeholder="user email" required />
+                        <select class="browser-default" name="bgroup" required />
                             <option value="" disabled selected>Choose Blood group</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>
@@ -153,7 +153,7 @@ if(isset($_POST['btn-signup']))
                             <option value="AB+">AB+</option>
                             <option value="AB-">AB-</option>
                         </select>
-                        <input type="password" name="txtpass" placeholder="User Password">
+                        <input type="password" name="txtpass" placeholder="User Password" required />
                         <input type="submit" name="btn-signup" value="Register">
                         <p class="signup">Already Have An Account!!! <a href="#" onclick="toggleForm();">Sign In.</a>
                         </p>
