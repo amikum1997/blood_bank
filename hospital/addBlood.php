@@ -98,18 +98,18 @@ if(isset($_POST['submit']))
     <form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" name="fname" class="validate">
+          <input id="first_name" type="text" name="fname" class="validate" required/>
           <label for="first_name">Donor First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" name="lname" class="validate">
+          <input id="last_name" type="text" name="lname" class="validate" required />
           <label for="last_name">Donor Last Name</label>
         </div>
       </div>
      <div class="row">
      <div class="col s6">
      <label>BLOOD GROUP</label>
-  <select class="browser-default" name="bgroup">
+  <select class="browser-default" name="bgroup" >
     <option value="" disabled selected>Choose your option</option>
     <option value="A+">A+</option>
     <option value="A-">A-</option>
@@ -134,13 +134,13 @@ if(isset($_POST['submit']))
      <div class="row">
      <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="number" name="phnum" class="validate">
+          <input id="icon_telephone" type="number" name="phnum" class="validate" required/>
           <label for="icon_telephone">Telephone</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" name="address" class="materialize-textarea"></textarea>
+          <textarea id="textarea1" name="address" class="materialize-textarea" required></textarea>
           <label for="textarea1">DONER ADDRESS</label>
         </div>
       </div>
